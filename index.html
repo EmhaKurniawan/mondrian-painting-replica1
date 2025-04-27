@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  .canvas{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items:center;
+  }
+    .container{
+    display: grid;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 22px;
+    gap:9px;
+    height: 748px;
+    width:748px;
+    background-color:#000;
+  }
+
+  .red{
+    background-color: red;
+    height:414px;
+    width:320px;
+    }
+  .yellow{
+    background-color: yellow;
+    height:414px;
+    width:419px;
+  }
+  .pink{
+    background-color: pink;
+    height:295px;
+    width:320px;
+    grid-column-start:1;
+  }
+  .blue{
+    background-color: blue;
+    height:295px;
+    width:360px;
+  }
+  .grey{
+    background-color: grey;
+    height:130px;
+    width:50px;
+    grid-column-start:4;
+    grid-column-end:4
+
+  }
+  .lemon{
+    background-color: lemonchiffon;
+    height:22px;
+    width:320px;
+    grid-row-start:4
+  }
+  .aliceblue{
+    background-color: aliceblue;
+    height:22px;
+    width:198px;
+    grid-row-start:4
+  }
+  .violet{
+    background-color: violet;
+    height:22px;
+    width:153px;
+    grid-row-start:4
+  }
+  .blueviolet{
+    background-color:blueviolet;
+    height:185px;
+    width:50px;
+    grid-column-start:-2;
+  }
+  .button{
+    display:flex;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="canvas">
+      <div class="container">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="pink"></div>
+    <div class="blue"></div>
+    <div class="grey"></div>
+    <div class="lemon"></div>
+    <div class="aliceblue"></div>
+    <div class="violet"></div>
+    <div class="blueviolet"></div>
+    <div class="aqua"></div>
+   </div>
+   <div>
+</body>
+
+</html>
